@@ -62,17 +62,5 @@ Notes: the exact method names and parameters depend on the VideoSDK version and 
 - Simulated switching here is a UI-level move of a MediaStream between video elements. With a real multi-participant service, switching rooms often requires leaving one room (or unpublishing streams) and joining/publishing to another — which may involve a short interruption depending on the SDK's capabilities.
 - Simulated media relay uses cloned tracks inside the browser. Real media relay generally involves server-side forwarding or republishing — this is necessary so other participants in the target room receive the media via the signaling/media servers.
 
-## Next steps (suggested)
 
-- Integrate the official VideoSDK JS/React SDK and replace the simulated functions with actual room join/publish/unpublish methods.
-- Implement server-side relay if you need reliable cross-room forwarding.
-- Add UI to show participant lists and remote participants.
-
----
-
-If you'd like, I can now:
-
-1. Integrate the official VideoSDK package (if you provide which VideoSDK package and API keys), or
-2. Update this demo to include a mock server-side relay example (using WebRTC peer connections), or
-3. Create a GitHub repo and push this scaffold for your review.
 
